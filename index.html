@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top header-top">
+        <div class="header-top__container _container">
+            <div class="header-top__logo">
+                <a href="./index.html">
+                    <img src="./img/svg/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="header-top__inner">
+                <div class="header-top__box-form">
+                    <form action="#" class="header-top__form header-top-form">
+                        <select name="search-select" id="search-select" class="header-top-form__select">
+                            <option>All categories</option>
+                            <option>1 item</option>
+                            <option>2 item</option>
+                            <option>3 item</option>
+                        </select>
+                        <div class="header-top-form__box-search">
+                            <input type="text" name="search" placeholder="Search anything">
+                            <button type="submit" class="header-top-form__submit">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#icon-search" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="header-top__action header-top-action">
+                    <div class="header-top-action__box-btn">
+                        <a href="#" class="header-top-action__btn _btn-oreng">Help</a>
+                    </div>
+                    <ul class="header-top-action__list">
+                        <li class="header-top-action__item">
+                            <a href="#" class="header-top-action__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#icon-user" />
+                                </svg>
+                                <span>Account</span>
+                            </a>
+                        </li>
+                        <li class="header-top-action__item">
+
+                            <a href="#" class="header-top-action__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#icon-shop" />
+                                </svg>
+                                <span class="length-shop">16</span>
+                                <span>Shoping</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__container _container">
+        <div class="header__inner">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item  sublist-item">
+                        <a href="#" class="nav__link">Jewelry & Accessories</a>
+                        <span class="sublist-item__arrow"></span>
+                        <div class="sublist">
+                            <ul class="sublist__list">
+                                <li class="sublist__item sublist-item">
+                                    <a href="#" class="sublist__link">Item 1</a>
+                                    <span class="sublist-item__arrow"></span>
+                                    <div class="sublist">
+                                        <ul class="sublist__list">
+                                            <li class="sublist__item">
+                                                <a href="#" class="sublist__link">Item 1</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sublist__item sublist-item">
+                                    <a href="#" class="sublist__link">Item 2</a>
+                                    <span class="sublist-item__arrow"></span>
+                                    <div class="sublist">
+                                        <ul class="sublist__list">
+                                            <li class="sublist__item sublist-item">
+                                                <a href="#" class="sublist__link">Item 1</a>
+                                                <span class="sublist-item__arrow"></span>
+                                                <div class="sublist">
+                                                    <ul class="sublist__list">
+                                                        <li class="sublist__item">
+                                                            <a href="#" class="sublist__link">Item 1</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#" class="sublist__link">Item 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item scroll-element" data-scroll-id="gallery">
+                        <a href="#" class="nav__link">Clothing & Shoes</a>
+                    </li>
+                    <li class="nav__item scroll-element" data-scroll-id="contact">
+                        <a href="#" class="nav__link">Home & Living</a>
+                    </li>
+                    <li class="nav__item scroll-element" data-scroll-id="contact">
+                        <a href="#" class="nav__link active">Wedding & Party</a>
+                    </li>
+                    <li class="nav__item scroll-element" data-scroll-id="contact">
+                        <a href="#" class="nav__link">Toys & Entertainment</a>
+                    </li>
+                    <li class="nav__item scroll-element" data-scroll-id="contact">
+                        <a href="#" class="nav__link">Art & Collectibles</a>
+                    </li>
+                    <li class="nav__item scroll-element sublist-item" data-scroll-id="contact">
+                        <a href="#" class="nav__link">Craft Supplies & Tools</a>
+                        <span class="sublist-item__arrow"></span>
+                        <div class="sublist">
+                            <ul class="sublist__list">
+                                <li class="sublist__item">
+                                    <a href="#" class="sublist__link">Item 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__burger header-burger">
+            <div class="header-burger__wrapper">
+                <span></span>
+            </div>
+        </div>
+        <div class="header-top__box-form">
+            <form action="#" class="header-top__form header-top-form">
+                <select name="search-select" id="select-search" class="header-top-form__select">
+                    <option>All categories</option>
+                    <option>1 item</option>
+                    <option>2 item</option>
+                    <option>3 item</option>
+                </select>
+                <div class="header-top-form__box-search">
+                    <input type="text" name="search" placeholder="Search anything">
+                    <button type="submit" class="header-top-form__submit">
+                        <svg>
+                            <use xlink:href="./img/svg/sprite.svg#icon-search" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+  <main class="main">
+
+    <section class="product">
+      <div class="collections">
+        <div class="collections__container _container">
+          <div class="collections__wrapper">
+            <div class="collections__item collections-item">
+              <a href="#">
+                <picture>
+                  <source srcset="./img/collections-1.png" media="(min-width: 1023.98px)" >
+                  <img src="./img/collections-1-tabel.png" alt="Collections" >
+                </picture>
+                <h5 class="collections-item__label">Clothing & Shoes</h5>
+              </a>
+            </div>
+            <div class="collections__item collections-item">
+              <a href="#">
+                <picture>
+                  <source srcset="./img/collections-2.png" media="(min-width: 1023.98px)" >
+                  <img src="./img/collections-2-tabel.png" alt="Collections" >
+                </picture>
+                <h5 class="collections-item__label">Home & Living</h5>
+              </a>
+            </div>
+            <div class="collections__item collections-item">
+              <a href="#">
+                <picture>
+                  <source srcset="./img/collections-3.png" media="(min-width: 1023.98px)" >
+                  <img src="./img/collections-3-tabel.png" alt="Collections" >
+                </picture>
+                <h5 class="collections-item__label">Art & Collectibles</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product__container _container">
+        <div class="product__wrapper">
+          <div class="product__swiper">
+            <div class="product__swiper-wrapper swiper-wrapper">
+              <div class="product__swiper-slide swiper-slide product-card" data-color="#D3FBD9">
+                <div class="product-card__box-img">
+                  <a href="#">
+                    <picture><source srcset="./img/product-1.webp" type="image/webp"><img src="./img/product-1.png" alt="Product"></picture>
+                  </a>
+                  <button class="product-card__favorite">
+                    <svg>
+                      <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__description">
+                  <div class="product-card__colors card-colors">
+                    <div class="card-colors__label">Colors</div>
+                    <div class="card-colors__wrapper">
+                      <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                      <a href="#" role="button" aria-label="Choose the color light blue" data-color="#33ABC6"></a>
+                      <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                      <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                      <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                      <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                      <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                    </div>
+                  </div>
+                  <a href="#" class="product-card__name">Vonna Neva Walnut Sandalye Chair</a>
+                  <div class="product-card__prices prices">
+                    <div class="prices__relevant">195,13 $</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__swiper-slide swiper-slide product-card" data-color="#FFE4BD">
+                <div class="product-card__box-img">
+                  <a href="#">
+                    <picture><source srcset="./img/product-2.webp" type="image/webp"><img src="./img/product-2.png" alt="Product"></picture>
+                  </a>
+
+                  <button class="product-card__favorite">
+                    <svg>
+                      <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__description">
+                  <div class="product-card__colors card-colors">
+                    <div class="card-colors__label">Colors</div>
+                    <div class="card-colors__wrapper">
+                      <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                      <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                      <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                      <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                      <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                    </div>
+                  </div>
+                  <a href="#" class="product-card__name">Wood lamp, Floor Lamp, Lambader, Decorative</a>
+                  <div class="product-card__prices prices">
+                    <div class="prices__relevant">458,43 $</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__swiper-slide swiper-slide product-card" data-color="#D9ABFD">
+                <div class="product-card__box-img">
+                  <a href="#"><picture><source srcset="./img/product-3.webp" type="image/webp"><img src="./img/product-3.png" alt="Product"></picture></a>
+
+                  <button class="product-card__favorite">
+                    <svg>
+                      <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__description">
+                  <div class="product-card__colors card-colors">
+                    <div class="card-colors__label">Colors</div>
+                    <div class="card-colors__wrapper">
+                      <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                      <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                      <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                    </div>
+                  </div>
+                  <a href="#" class="product-card__name">NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
+                  </a>
+                  <div class="product-card__prices prices">
+                    <div class="prices__relevant">789,67 $</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__swiper-slide swiper-slide product-card" data-color="#FDF0AB">
+                <div class="product-card__box-img">
+                  <a href="#"><picture><source srcset="./img/product-4.webp" type="image/webp"><img src="./img/product-4.png" alt="Product"></picture></a>
+
+                  <button class="product-card__favorite">
+                    <svg>
+                      <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="product-card__description">
+                  <div class="product-card__colors card-colors">
+                    <div class="card-colors__label">Colors</div>
+                    <div class="card-colors__wrapper">
+                      <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                      <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                      <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                      <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                      <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                    </div>
+                  </div>
+                  <a href="#" class="product-card__name">Lace Punch Needle Pillow Covers with invisible zipper, 16*16
+                    inches</a>
+                  <div class="product-card__prices prices">
+                    <div class="prices__relevant">43,23 $</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__swiper-pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-accordeon">
+      <div class="product-accordeon__containe _container">
+        <div class="product-accordeon__tabs tabs">
+          <div class="product-accordeon__header tabs__header">
+            <div class="product-accordeon__item tabs__item active" data-tab-index="1"><h5>Modern
+                Farmhouse</h5></div>
+            <div class="product-accordeon__item tabs__item" data-tab-index="2"><h5>Eclectic
+                Decor</h5></div>
+            <div class="product-accordeon__item tabs__item" data-tab-index="3"><h5>Polka Boho
+                Decor</h5></div>
+            <div class="product-accordeon__item tabs__item" data-tab-index="4"><h5>Minimalist
+                Style</h5></div>
+            <div class="product-accordeon__item tabs__item" data-tab-index="5"><h5>Anniversary
+                Gift</h5></div>
+            <div class="product-accordeon__item tabs__item" data-tab-index="6"><h5>Wedding
+                Gifts</h5></div>
+          </div>
+          <div class="product-accordeon__body tabs__body tabs__body-1 active">
+            <div class="product-accordeon__swiper">
+              <div class="product-accordeon__swiper-wrapper swiper-wrapper">
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#D3FBD9">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-1.webp" type="image/webp"><img src="./img/product-1.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#33ABC6"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Vonna Neva Walnut Sandalye Chair</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">195,13 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#FBF7D3">
+                  <div class="product-card__box-img">
+                    <a href="#"><picture><source srcset="./img/product-accordeon-2.webp" type="image/webp"><img src="./img/product-accordeon-2.png" alt="Product"></picture></a>
+                    
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Wood lamp, Floor Lamp, Lambader, Decorative</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">458,43 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#FFBDBD">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-3.webp" type="image/webp"><img src="./img/product-accordeon-3.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
+                    </a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">789,67 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#C0ABFD">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-4.webp" type="image/webp"><img src="./img/product-accordeon-4.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Lace Punch Needle Pillow Covers with invisible zipper, 16*16
+                      inches</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">43,23 $</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-accordeon__body tabs__body tabs__body-2">
+            <div class="product-accordeon__swiper">
+              <div class="product-accordeon__swiper-wrapper swiper-wrapper">
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#D3FBD9">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-1.webp" type="image/webp"><img src="./img/product-1.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#33ABC6"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Vonna Neva Walnut Sandalye Chair</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">195,13 $</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-accordeon__body tabs__body tabs__body-3">
+            <div class="product-accordeon__swiper">
+              <div class="product-accordeon__swiper-wrapper swiper-wrapper">
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#D3FBD9">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-1.webp" type="image/webp"><img src="./img/product-1.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#33ABC6"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Vonna Neva Walnut Sandalye Chair</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">195,13 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#FBF7D3">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-2.webp" type="image/webp"><img src="./img/product-accordeon-2.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Wood lamp, Floor Lamp, Lambader, Decorative</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">458,43 $</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-accordeon__body tabs__body tabs__body-4">
+            <div class="product-accordeon__swiper">
+              <div class="product-accordeon__swiper-wrapper swiper-wrapper">
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#D3FBD9">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-1.webp" type="image/webp"><img src="./img/product-1.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#33ABC6"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Vonna Neva Walnut Sandalye Chair</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">195,13 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#FBF7D3">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-2.webp" type="image/webp"><img src="./img/product-accordeon-2.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Wood lamp, Floor Lamp, Lambader, Decorative</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">458,43 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#FFBDBD">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-3.webp" type="image/webp"><img src="./img/product-accordeon-3.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
+                    </a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">789,67 $</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-accordeon__body tabs__body tabs__body-5">
+            <div class="product-accordeon__swiper">
+              <div class="product-accordeon__swiper-wrapper swiper-wrapper">
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#D3FBD9">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-1.webp" type="image/webp"><img src="./img/product-1.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#33ABC6"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Vonna Neva Walnut Sandalye Chair</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">195,13 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#FBF7D3">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-2.webp" type="image/webp"><img src="./img/product-accordeon-2.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Wood lamp, Floor Lamp, Lambader, Decorative</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">458,43 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#FFBDBD">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-3.webp" type="image/webp"><img src="./img/product-accordeon-3.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
+                    </a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">789,67 $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#C0ABFD">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-accordeon-4.webp" type="image/webp"><img src="./img/product-accordeon-4.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Lace Punch Needle Pillow Covers with invisible zipper, 16*16
+                      inches</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">43,23 $</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-accordeon__body tabs__body tabs__body-6">
+            <div class="product-accordeon__swiper">
+              <div class="product-accordeon__swiper-wrapper swiper-wrapper">
+                <div class="product-accordeon__swiper-slide swiper-slide product-card" data-color="#D3FBD9">
+                  <div class="product-card__box-img">
+                    <a href="#">
+                      <picture><source srcset="./img/product-1.webp" type="image/webp"><img src="./img/product-1.png" alt="Product"></picture>
+                    </a>
+                    <button class="product-card__favorite">
+                      <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-favorite" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-card__description">
+                    <div class="product-card__colors card-colors">
+                      <div class="card-colors__label">Colors</div>
+                      <div class="card-colors__wrapper">
+                        <a href="#" role="button" aria-label="Choose the color green" data-color="#7CB93E"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#33ABC6"></a>
+                        <a href="#" role="button" aria-label="Choose the color light blue" data-color="#1CCD8D"></a>
+                        <a href="#" role="button" aria-label="Choose the color blue" data-color="#3F65EA"></a>
+                        <a href="#" role="button" aria-label="Choose the color red" data-color="#F64A69"></a>
+                        <a href="#" role="button" aria-label="Choose the color purple" data-color="#A635EC"></a>
+                        <a href="#" role="button" aria-label="Choose the color oreng" data-color="#F9A85D"></a>
+                      </div>
+                    </div>
+                    <a href="#" class="product-card__name">Vonna Neva Walnut Sandalye Chair</a>
+                    <div class="product-card__prices prices">
+                      <div class="prices__relevant">195,13 $</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="subfooter-label">
+      <p>Commerce, is powered by 100% renewable electricity.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper footer-wrapper">
+        <div class="footer-wrapper__container _container">
+            <div class="footer-wrapper__box-info">
+                <div class="footer-wrapper__inner">
+                    <div class="footer-wrapper__logo">
+                        <a href="./index.html">
+                            <img src="./img/svg/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="footer-wrapper__sublogo">
+                        <p>Cricklewood,London NW2 6qg, Uk</p>
+                    </div>
+                </div>
+                <div class="footer-wrapper__social footer-social">
+                    <ul class="footer-social__list">
+                        <li class="footer-social__item"><a href="#" class="footer-social__link"><img
+                                    src="./img/facebook.png" alt="facebook"></a>
+                        </li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link"><img
+                                    src="./img/twitter.png" alt="twitter"></a>
+                        </li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link"><img
+                                    src="./img/linkedin.png" alt="linkedin"></a>
+                        </li>
+                        <li class="footer-social__item"><a href="#" class="footer-social__link"><img
+                                    src="./img/dribbble.png" alt="dribbble"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-wrapper__wrap">
+                <div class="footer-wrapper__column accardeons">
+                    <div class="footer-wrapper__label accardeons__header">Shop <span><svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-expand_down_light" />
+                    </svg></span></div>
+                    <ul class="footer-wrapper__list accardeons__body">
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Gift cards</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Site map</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Polka blog</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Login</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wrapper__column accardeons">
+                    <div class="footer-wrapper__label accardeons__header">Sell <span> <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-expand_down_light" />
+                    </svg></span></div>
+                    <ul class="footer-wrapper__list accardeons__body">
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Sell on Polka</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Teams</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Forums</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wrapper__column accardeons">
+                    <div class="footer-wrapper__label accardeons__header">About <span> <svg>
+                        <use xlink:href="./img/svg/sprite.svg#icon-expand_down_light" />
+                    </svg></span></div>
+                    <ul class="footer-wrapper__list accardeons__body">
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Polka, Inc.</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Policies</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Investors</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Careers</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wrapper__column accardeons">
+                    <div class="footer-wrapper__label accardeons__header">Help 
+                            <span> <svg>
+                                <use xlink:href="./img/svg/sprite.svg#icon-expand_down_light" />
+                            </svg></span></div>
+                    <ul class="footer-wrapper__list accardeons__body">
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Help Center</a></li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Trust and safety</a>
+                        </li>
+                        <li class="footer-wrapper__item"><a href="#" class="footer-wrapper__link">Privacy settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom footer-bottom">
+        <div class="footer-bottom__container _container">
+            <div class="footer-bottom__author">© 2023 Commerce, Inc.</div>
+            <div class="footer-bottom__links">
+                <a href="#" class="footer-bottom__link">Privacy policy</a>
+                <a href="#" class="footer-bottom__link">Terms of use</a>
+                <a href="#" class="footer-bottom__link">Cookies</a>
+            </div>
+            <div class="footer-bottom__go-top">
+                <span>Scroll to top</span>
+                <img src="./img/svg/arrow_top.svg" alt="Arrow">
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
