@@ -46,22 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-
-  // Перевірка наявності слайдів для приховування навігації
-  // function toggleNavigation() {
-  //   var isNavigationHidden = mySwiper.slides.length <= 1;
-  //   var navigationElements = document.querySelectorAll('.swiper-button-next, .swiper-button-prev');
-
-  //   navigationElements.forEach(function (element) {
-  //     element.style.display = isNavigationHidden ? 'none' : 'block';
-  //   });
-  // }
-
-  // Виклик функції при завантаженні та зміні слайдів
-  // swiper.on('init', toggleNavigation);
-  // swiper.on('slideChange', toggleNavigation);
-
-
   // Пишемо функцію яка буде при адаптиві робити з блоку слайдер.
   function mobSlideActive(cls) {
     let slideItem = document.querySelectorAll(`.${cls}`)
@@ -78,42 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   mobSlideActive("swiper-slide")
   window.addEventListener('resize', mobSlideActive("swiper-slide"))
-
-  // // Перевірка на сенсорні екрани, і додаємо класс для body.
-  // const isMobile = {
-  //     Android: function() {
-  //         return navigator.userAgent.match(/Android/i);
-  //     },
-  //     BlackBorry: function() {
-  //         return navigator.userAgent.match(/BlackBorry/i);
-  //     },
-  //     IOS: function() {
-  //         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-  //     },
-  //     Opera: function() {
-  //         return navigator.userAgent.match(/Opera Mini/i);
-  //     },
-  //     Windows: function() {
-  //         return navigator.userAgent.match(/IEMobile/i);
-  //     },
-  //     any: function() {
-  //         return (
-  //             isMobile.Android() ||
-  //             isMobile.BlackBorry() ||
-  //             isMobile.IOS() ||
-  //             isMobile.Opera() ||
-  //             isMobile.Windows()
-  //         );
-  //     }
-  // };
-
-  // if (isMobile.any()){
-  //     document.body.classList.add('_touch');
-  // } else {
-  //     document.body.classList.add('_pc');
-  // }
-
-  // let events = document.body.classList.contains('_touch') ? 'click' : 'mousemove';
 
   // Робимо бургер меню.
   function burger() {
@@ -245,55 +193,6 @@ document.addEventListener('DOMContentLoaded', function () {
   touchSubList();
 
 
-
-
-
-
-
-
-  // // Робимо активні попапи посайту.
-  // function activePopap() {
-  //     let popapBtn = document.querySelectorAll('.popap-btn')
-
-  //     if(popapBtn.length > 0) {
-  //         popapBtn.forEach(btn => {
-  //             btn.addEventListener('click', function() {
-  //                 let idPopap = this.dataset.id
-
-  //                 if(idPopap) {
-  //                     let popap = document.querySelector(`#${idPopap}`)
-
-  //                     if(popap) {
-  //                         popap.classList.add('active')
-
-  //                         let btnClose = popap.querySelector('.popap__close')
-
-  //                         popap.addEventListener('click', function(e) {
-  //                             e.stopPropagation()
-  //                         })
-
-  //                         let popapShadow = popap.parentNode
-
-  //                         if(popapShadow) {
-  //                             popapShadow.classList.add('active')
-
-  //                             popapShadow.addEventListener('click', popapHidden)
-  //                             btnClose.addEventListener('click', popapHidden)
-
-  //                             function popapHidden() {
-  //                                 popapShadow.classList.remove('active')
-  //                                 popap.classList.remove('active')
-  //                             }
-  //                         }
-  //                     }
-  //                 }
-  //             })
-  //         })
-  //     }
-  // } 
-  // activePopap()
-
-
   // Робимо таби по сайту.
   function heandlerTabs() {
     let tabs = document.querySelectorAll(".tabs")
@@ -335,29 +234,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   heandlerTabs()
 
-  // // При скролі додаємо класс для header щоб зафіксувати.
-  // function fixedHeader() {
-  //     let header = document.querySelector('.header')
-  //     let headerHeight = header.clientHeight
-
-  //     if(header) {
-  //         let nextElement = header.nextElementSibling
-
-  //         if(window.matchMedia("(min-width: 1023.98px)").matches) {
-  //             document.addEventListener('scroll', function() {
-  //                 if(window.scrollY > headerHeight) {
-  //                     header.classList.add('fixed')
-  //                     nextElement.style.marginTop = `${headerHeight}px`
-  //                 } else {
-  //                     header.classList.remove('fixed')
-  //                     nextElement.style.marginTop = `0px`
-  //                 }
-  //             })
-  //         }
-  //     }
-  // }
-  // document.addEventListener('resize', fixedHeader())
-
 
   // Робимо плавну прокрутку до якорів.
   function goAnchor() {
@@ -376,60 +252,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
   goAnchor()
-
-  // // При скролі для відповідних елементів додаємо класс.
-  // function heandlerScroll() {
-  //   let elementsScroll = document.querySelectorAll('.scroll-element')
-  //   let elementsAnimation = document.querySelectorAll('.animation')
-  //   let sections = document.querySelectorAll('section')
-
-  //   // if (elementsScroll.length > 0) {
-  //   //   window.addEventListener('scroll', scrollActiveItem)
-
-  //   //   function scrollActiveItem() {
-  //   //     let scrollPosition = window.scrollY + (window.innerHeight / 2)
-
-  //   //     sections.forEach(section => {
-  //   //       let sectionTop = section.offsetTop
-
-  //   //       if(scrollPosition >= sectionTop) {
-  //   //         let sectionId = section.getAttribute('id')
-
-  //   //         elementsScroll.forEach(item => {
-  //   //           if (item.dataset.scrollId === sectionId) {
-  //   //             item.classList.add('active')
-  //   //           } else {
-  //   //             item.classList.remove('active')
-  //   //           }
-  //   //         })
-  //   //       }
-  //   //     })
-  //   //   }
-
-  //   //   scrollActiveItem()
-  //   // }
-
-  //   // if (elementsAnimation.length > 0) {
-
-  //   //   elementsAnimation.forEach(item => {
-
-  //   //     const options = {
-  //   //       rootMargin: '-200px',
-  //   //       threshold: [0, 0.5]
-  //   //     }
-  //   //     const obsorver = new IntersectionObserver(function (entries, obsorver) {
-  //   //       entries.forEach(entry => {
-  //   //         if (entry.isIntersecting) {
-  //   //           item.classList.add('active')
-  //   //         }
-  //   //       })
-  //   //     }, options)
-
-  //   //     obsorver.observe(item)
-  //   //   })
-  //   // }
-  // }
-  // heandlerScroll()
 
   // Переносимо елементи в потрібні блоки при адаптиві.
   function dynamicElementsTransfer() {
