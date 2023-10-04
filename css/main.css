@@ -1286,6 +1286,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 1023.98px) {
   .product-accordeon__item {
