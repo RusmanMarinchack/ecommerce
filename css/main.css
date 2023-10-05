@@ -1260,6 +1260,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 1023.98px) {
@@ -1273,6 +1274,7 @@ body {
   .product-accordeon__header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    justify-content: flex-start;
     overflow-x: auto;
   }
 }
@@ -1529,7 +1531,7 @@ body {
             justify-content: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding: 1rem 1.5rem;
+    padding: 1.3rem 1.5rem;
     background-color: #F5F6F8;
     border-radius: 200px;
   }
